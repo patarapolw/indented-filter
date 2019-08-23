@@ -1,0 +1,37 @@
+{
+  "name": "indented-filter",
+  "version": "0.1.0",
+  "description": "Indented filter maker for Showdown extension / Hyperpug",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "tsc",
+    "test": "ts-mocha tests/**/*.spec.ts"
+  },
+  "keywords": [
+    "showdown",
+    "markdown",
+    "showdown-extension",
+    "hyperpug"
+  ],
+  "author": {
+    "name": "Pacharapol Withayasakpunt",
+    "email": "patarapolw@gmail.com",
+    "url": "https://polvcode.dev"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.2",
+    "@types/showdown": "^1.9.3",
+    "mocha": "^6.2.0",
+    "showdown": "^1.9.0",
+    "ts-mocha": "^6.0.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patarapolw/showdown-ext-helper.git"
+  }
+}
