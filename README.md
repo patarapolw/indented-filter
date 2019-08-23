@@ -1,6 +1,6 @@
 # indented-filter
 
-Indented filter maker for [Showdown](https://github.com/showdownjs/showdown) extension / Hyperpug
+Indented filter maker for [Showdown](https://github.com/showdownjs/showdown) extension / [Hyperpug](https://github.com/patarapolw/hyperpug)
 
 ## Installation
 
