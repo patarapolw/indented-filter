@@ -1,6 +1,12 @@
 # indented-filter
 
-Indented filter maker for Showdown extension / Hyperpug
+Indented filter maker for [Showdown](https://github.com/showdownjs/showdown) extension / Hyperpug
+
+## Installation
+
+```
+npm i indented-filter
+```
 
 ## Usage
 
@@ -18,11 +24,15 @@ const showdownX1Extension = {
 Example matched cases,
 
 ```
-^^name hello
+^^x1 hello
 ```
 
 ```
-^^name.
+^^x1(source="github") hello
+```
+
+```
+^^x1(source="github").
   thank you
     very
 
@@ -30,3 +40,7 @@ Example matched cases,
 ```
 
 For more test cases, see [/tests/index.spec.ts](/tests/index.spec.ts)
+
+For my use case, see, <https://github.com/patarapolw/zhdiary/blob/master/src/plugins/showdown-ext.js#L23>
+
+For more information about custom [Showdown](https://github.com/showdownjs/showdown) extensions, see <https://github.com/showdownjs/showdown/wiki/Extensions>.
