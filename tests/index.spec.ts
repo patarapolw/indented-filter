@@ -7,6 +7,8 @@ const indentedFilter = createIndentedFilter("^^name", (s, attrs) => {
 
 describe("createIndentedFilter", () => {
   [
+    {q: '[天地玄黃，宇宙洪荒。](^^name(filename="public/posts/2019/08/千字文1.1.pug") p^^)', name: "braced",
+  expected: '[天地玄黃，宇宙洪荒。](<!-- {"filename":"public/posts/2019/08/千字文1.1.pug"}: p -->)'},
     {q: "", name: "blank", expected: ""},
     {q: "^^name", name: "no children", expected: '<!-- {}:  -->'},
     {q: "^^name hello", name: "single line", expected: '<!-- {}: hello -->'},

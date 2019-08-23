@@ -32,6 +32,10 @@ Example matched cases,
 ```
 
 ```
+![](^^x1(source="github") hello^^)
+```
+
+```
 ^^x1(source="github").
   thank you
     very

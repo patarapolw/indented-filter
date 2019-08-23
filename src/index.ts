@@ -65,8 +65,14 @@ export function createIndentedFilter(tag: string, fn: (s: string, attrs: any) =>
           end: lastPos
         });
       } else {
-        const row = nextSegment.split("\n")[0];
-        lastPos += row.length;
+        let row = nextSegment.split("\n")[0];
+        const endIndex = row.indexOf("^^");
+        if (endIndex !== -1) {
+          row = row.substr(0, endIndex)
+          lastPos += row.length + 2;
+        } else {
+          lastPos += row.length;
+        }
 
         replacement.push({
           s: stripIndent(row),
